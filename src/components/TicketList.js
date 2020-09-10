@@ -9,6 +9,7 @@ function TicketList(props) {
       {props.ticketList.map((ticket) => (
         <Ticket
 
+          whenTicketClicked = {props.onTicketSelection}
           names={ticket.names}
           location={ticket.location}
           issue={ticket.issue}
